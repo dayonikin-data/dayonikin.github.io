@@ -6,15 +6,13 @@
   <!-- PRIMARY SEO -->
   <title>Dayonikin | Dayon Quadar Keller | Artist & Producer</title>
 
-  <meta name="description" content="Official site for Dayon Quadar Keller, professionally known as Dayon or Dayonikin. Canadian artist and producer from Kitchener, Ontario, actively collaborating throughout the underground and affiliated with the HXS music community. Albums include MIND OVER MATTER, A LIVING NIGHTMARE, and MY DARK DELUSIONS.">
-
-  <meta name="keywords" content="Dayonikin, Dayon, Dayon Quadar Keller, Canadian artist, producer, underground rapper, HXS, HXS music community, MIND OVER MATTER, A LIVING NIGHTMARE, MY DARK DELUSIONS, Kitchener Ontario">
-
+  <meta name="description" content="Official site for Dayon Quadar Keller, professionally known as Dayon or Dayonikin. Canadian artist and producer from Kitchener, Ontario, affiliated with the HXS music community alongside SJ and Klemmer.">
+  <meta name="keywords" content="Dayonikin, Dayon, Dayon Quadar Keller, HXS, Canadian artist, underground rap">
   <meta name="author" content="Dayon Quadar Keller">
 
   <!-- OPEN GRAPH -->
   <meta property="og:title" content="Dayonikin | Official Site">
-  <meta property="og:description" content="Official site for Dayon Quadar Keller aka Dayon / Dayonikin. Canadian underground artist and producer affiliated with the HXS music community.">
+  <meta property="og:description" content="Official site for Dayon Quadar Keller aka Dayon / Dayonikin.">
   <meta property="og:type" content="website">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,14 +22,48 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
+  <!-- SCHEMA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    "name": "Dayonikin",
+    "alternateName": ["Dayon", "Dayon Quadar Keller"],
+    "foundingLocation": {
+      "@type": "Place",
+      "name": "Kitchener, Ontario, Canada"
+    },
+    "sameAs": [
+      "https://www.instagram.com/dayonikin",
+      "https://open.spotify.com/artist/5tDX0FQdJSjqr03XWGhjvF"
+    ]
+  }
+  </script>
+
   <style>
     body {
       background: #0d0d0d;
       color: #f2f2f2;
       font-family: 'Inter', Arial, sans-serif;
       margin: 0;
-      padding: 20px;
+      padding: 24px;
       line-height: 1.55;
+    }
+
+    h1 {
+      font-size: 38px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-top: 28px;
+      font-weight: 500;
+    }
+
+    p {
+      max-width: 900px;
     }
 
     a {
@@ -39,61 +71,71 @@
       text-decoration: none;
     }
 
-    a:hover {
-      text-decoration: underline;
-    }
-
-    h1 {
-      font-size: 36px;
-      margin: 6px 0 8px;
-      font-weight: 600;
-    }
-
-    h2 {
-      font-size: 22px;
-      margin: 20px 0 6px;
-      font-weight: 500;
-    }
-
-    p {
-      margin: 6px 0;
-      max-width: 900px;
-    }
-
-    .small {
-      font-size: 13px;
-      opacity: 0.85;
-      margin-top: 6px;
-    }
-
-    .socials {
-      margin: 12px 0 18px;
+    /* ICON BAR */
+    .icon-bar {
       display: flex;
-      flex-direction: column;
-      gap: 10px;
+      gap: 18px;
+      margin-bottom: 26px;
     }
 
-    .ig-link,
-    .discord-link {
+    .icon-bar a {
+      width: 28px;
+      height: 28px;
       display: flex;
       align-items: center;
-      gap: 8px;
+      justify-content: center;
+      transition: transform 0.25s ease, filter 0.25s ease;
+    }
+
+    .icon-bar img {
+      width: 100%;
+      filter: grayscale(100%);
+    }
+
+    .icon-bar a:hover img {
+      filter: grayscale(0%);
+    }
+
+    .icon-bar a:hover {
+      transform: translateY(-3px);
+      filter: drop-shadow(0 0 6px rgba(77,163,255,0.6));
+    }
+
+    /* INLINE ICONS */
+    .inline-icon {
+      width: 14px;
+      vertical-align: middle;
+      margin-right: 4px;
+    }
+
+    /* SOCIAL LINKS */
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-right: 16px;
       font-size: 14px;
     }
 
-    .icon {
+    .social-link img {
       width: 16px;
-      height: 16px;
     }
 
-    .spotify {
-      margin: 14px 0 18px;
-      max-width: 900px;
+    /* IMAGE */
+    .hxs-image {
+      width: 280px;
+      border-radius: 12px;
+      margin-top: 12px;
+      opacity: 0.9;
     }
 
     iframe {
+      width: 100%;
+      max-width: 900px;
+      height: 352px;
       border-radius: 12px;
       border: none;
+      margin-top: 10px;
     }
   </style>
 </head>
@@ -102,94 +144,74 @@
 
   <h1>Dayonikin</h1>
 
-  <h2>Who is Dayon / Dayonikin?</h2>
-  <p>
-    Dayonikin (also known as Dayon). Born April 12th, 2005, Dayon Quadar Keller is
-    a genre-blending Canadian artist and producer from Kitchener, Ontario,
-    actively collaborating throughout the underground.
-  </p>
-
-  <div class="small">
-    <a href="https://www.google.com/search?q=dayonikin" target="_blank">
-      Learn more from Google AI →
+  <!-- ICON ONLY BAR -->
+  <div class="icon-bar">
+    <a href="https://open.spotify.com/artist/5tDX0FQdJSjqr03XWGhjvF" target="_blank" aria-label="Spotify">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg">
+    </a>
+    <a href="https://music.apple.com/us/artist/dayon/1735592898" target="_blank" aria-label="Apple Music">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg">
+    </a>
+    <a href="https://youtube.com/@hxsdayon" target="_blank" aria-label="YouTube">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/YouTube_play_button_icon_%282013%E2%80%932017%29.svg">
+    </a>
+    <a href="https://genius.com/artists/Dayon" target="_blank" aria-label="Genius">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Genius_logo.svg">
     </a>
   </div>
 
-  <!-- EMBEDDED PLAYLIST -->
-  <div class="spotify">
-    <iframe src="https://open.spotify.com/embed/playlist/0qnbIxUkmZXsVCkD91miaN"
-      width="100%" height="352"
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-    </iframe>
-  </div>
+  <h2>Who is Dayon / Dayonikin?</h2>
+  <p>
+    Dayonikin (also known as Dayon), born April 12th, 2005, is a genre-blending Canadian
+    artist and producer from Kitchener, Ontario, navigating emotion, identity, form & expression.
+  </p>
 
   <h2>What is HXS?</h2>
   <p>
-    The HXS Community (often associated with the handles @dayonikin, @hxs.sj,
-    or @klemmer02) serves as a collective — a central hub for independent music
-    releases, lifestyle content, and projects.
+    The HXS Community (often associated with
+    <a href="https://www.instagram.com/dayonikin" target="_blank">
+      <img class="inline-icon" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png">@dayonikin
+    </a>,
+    <a href="https://www.instagram.com/hxs.sj" target="_blank">
+      <img class="inline-icon" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png">@hxs.sj
+    </a>,
+    and
+    <a href="https://www.instagram.com/klemmer02" target="_blank">
+      <img class="inline-icon" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png">@klemmer02
+    </a>)
+    functions as a collective hub for independent music, visuals, and culture.
   </p>
 
-  <div class="small">
-    <a href="https://www.google.com/search?q=hxs+music+official" target="_blank">
-      Learn more from Google AI →
+  <img src="IMG_3287.jpeg" alt="HXS Community" class="hxs-image">
+
+  <p>
+    <a class="social-link" href="https://discord.gg/wYkfkBBWYF" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Discord_logo.svg">
+      Dayon Discord
     </a>
-  </div>
-
-  <div class="socials">
-    <div>
-      <a class="ig-link" href="https://www.instagram.com/dayonikin" target="_blank">
-        <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png">
-        @dayonikin
-      </a>
-      <a class="discord-link" href="https://discord.gg/wYkfkBBWYF" target="_blank">
-        <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/9/98/Discord_logo.svg">
-        Join the DAYON HUB
-      </a>
-    </div>
-
-    <div>
-      <a class="ig-link" href="https://www.instagram.com/hxs.sj" target="_blank">
-        <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png">
-        @hxs.sj
-      </a>
-      <a class="discord-link" href="https://discord.gg/XPywccuuS" target="_blank">
-        <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/9/98/Discord_logo.svg">
-        Join the HXS HUB
-      </a>
-    </div>
-
-    <div>
-      <a class="ig-link" href="https://www.instagram.com/klemmer02" target="_blank">
-        <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png">
-        @klemmer02
-      </a>
-    </div>
-  </div>
+    <a class="social-link" href="https://discord.gg/XPywccuuS" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Discord_logo.svg">
+      HXS Discord
+    </a>
+  </p>
 
   <h2>MIND OVER MATTER (2025)</h2>
-  <div class="spotify">
-    <iframe src="https://open.spotify.com/embed/album/1YJIiddH66WMF4LlqcQkCC"
-      width="100%" height="352"
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-    </iframe>
-  </div>
+  <iframe src="https://open.spotify.com/embed/album/1YJIiddH66WMF4LlqcQkCC"></iframe>
+  <p>
+    <strong>MIND OVER MATTER</strong> is Dayon’s debut album, centered on perseverance and strength.
+  </p>
 
   <h2>A LIVING NIGHTMARE (2025)</h2>
-  <div class="spotify">
-    <iframe src="https://open.spotify.com/embed/album/76IpvkZi0Rz5OKztoOv6gQ"
-      width="100%" height="352"
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-    </iframe>
-  </div>
+  <iframe src="https://open.spotify.com/embed/album/76IpvkZi0Rz5OKztoOv6gQ"></iframe>
+  <p>
+    A collaborative album with AVI Christian exploring fear, self-doubt, and confinement.
+  </p>
 
   <h2>MY DARK DELUSIONS (2026)</h2>
-  <div class="spotify">
-    <iframe src="https://open.spotify.com/embed/album/6RyKKzSlKiYnufFF8zPbt6"
-      width="100%" height="352"
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-    </iframe>
-  </div>
+  <iframe src="https://open.spotify.com/embed/album/6RyKKzSlKiYnufFF8zPbt6"></iframe>
+  <p>
+    A descent into paranoia, emotional instability, and chaos as it unfolds.
+  </p>
 
 </body>
 </html>
